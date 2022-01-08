@@ -132,6 +132,9 @@ const SummaryItem = styled.div`
   font-weight: ${(props) => props.type === "total" && "500"};
   font-size: ${(props) => props.type === "total" && "24px"};
 `;
+const PaddingTab = styled.div`
+  ${mobile({ marginBottom: "30px" })}
+`;
 
 const SummaryItemText = styled.span``;
 
@@ -149,6 +152,7 @@ const Cart = () => {
   return (
     <Container>
       <Navbar />
+      <PaddingTab />
       <Announcement />
       <Wrapper>
         <Title>YOUR BAG</Title>

@@ -6,17 +6,22 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
-
+import styled from "styled-components";
+import { mobile } from "../responsive";
+const PaddingTab = styled.div`
+  ${mobile({ marginBottom: "20px" })}
+`;
 const Home = () => {
   return (
     <div>
       <Announcement />
       <Navbar />
       <Slider />
+      <PaddingTab />
       <Categories />
-      <Products/>
-      <Newsletter/>
-      <Footer/>
+      <Products />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };

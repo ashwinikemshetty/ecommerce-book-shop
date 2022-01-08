@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import { popularProducts } from "../data";
 import Product from "./Product";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div`
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  ${mobile({ justifyContent: "center" })}
+  ${tablet({ justifyContent: "space-around" })}
 `;
 
 const Products = () => {

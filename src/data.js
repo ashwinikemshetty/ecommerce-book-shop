@@ -31,7 +31,7 @@ export const categories = [
   {
     id: 2,
     img: "https://images.unsplash.com/photo-1637681067285-7e7a5d3a1cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    title: "PERSONAL DEVELOPMENT",
+    title: "FINANCE",
   },
   {
     id: 3,

@@ -2,7 +2,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div`
   width: 100%;
@@ -45,6 +45,7 @@ const Slide = styled.div`
   display: flex;
   align-items: center;
   background-color: #${(props) => props.bg};
+  ${tablet({ flexDirection: "column" })}
 `;
 
 const ImgContainer = styled.div`
@@ -62,6 +63,7 @@ const Image = styled.img`
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
+  ${tablet({ textAlign: "center" })}
 `;
 
 const Title = styled.h1`

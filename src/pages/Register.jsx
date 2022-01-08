@@ -55,11 +55,15 @@ const Button = styled.button`
   color: white;
   cursor: pointer;
 `;
+const PaddingTab = styled.div`
+  ${mobile({ marginBottom: "30px" })}
+`;
 
 const Register = () => {
   return (
     <>
       <Navbar />
+      <PaddingTab />
       <Container>
         <Wrapper>
           <Title>CREATE AN ACCOUNT</Title>

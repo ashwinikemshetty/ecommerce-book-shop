@@ -58,11 +58,15 @@ const Link = styled.a`
   text-decoration: underline;
   cursor: pointer;
 `;
+const PaddingTab = styled.div`
+  ${mobile({ marginBottom: "30px" })}
+`;
 
 const Login = () => {
   return (
     <>
       <Navbar />
+      <PaddingTab />
       <Container>
         <Wrapper>
           <Title>SIGN IN</Title>

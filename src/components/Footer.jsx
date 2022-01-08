@@ -8,7 +8,7 @@ import {
   Twitter,
 } from "@material-ui/icons";
 import styled from "styled-components";
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +20,7 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  ${mobile({ alignItems: "center" })};
 `;
 
 const Logo = styled.h1``;
@@ -47,7 +48,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
-  ${mobile({ display: "none" })}
+  ${mobile({ display: "none" })};
 `;
 
 const Title = styled.h3`
@@ -60,6 +61,7 @@ const List = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  ${tablet({ flexDirection: "column" })};
 `;
 
 const ListItem = styled.li`
@@ -70,13 +72,14 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
-  ${mobile({ backgroundColor: "#fff8f8" })}
+  ${mobile({ backgroundColor: "#fff8f8", textAlign: "center" })}
 `;
 
 const ContactItem = styled.div`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  ${mobile({ justifyContent: "center" })}
 `;
 
 const Payment = styled.img`
